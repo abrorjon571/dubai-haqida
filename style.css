@@ -1,0 +1,156 @@
+/* Umumiy uslublar */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* To'liq balandlik */
+    display: flex;
+    justify-content: center; /* Yatay markazlashtirish */
+    align-items: center; /* Vertikal markazlashtirish */
+    flex-direction: column;
+    background: linear-gradient(45deg, #ff7e5f, #feb47b); /* Boshlang'ich gradient */
+    animation: gradientAnimation 5s ease infinite; /* Ranglarning harakati */
+    transition: background 3s ease-in-out; /* Fondagi o'zgarishlar */
+    color: white;
+    line-height: 1.6;
+    text-align: center; /* Barcha matnlarni markazlashtirish */
+    padding-top: 20px;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7); /* Orqa fonning shaffofligi */
+    color: white;
+    padding: 40px;
+    width: 80%; /* 80% kenglik */
+    max-width: 800px; /* Maksimal kenglik */
+    margin: 20px 0;
+    border-radius: 10px;
+    animation: fadeIn 2s ease-in-out; /* Animatsiya: Oqish */
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+section {
+    width: 80%; /* 80% kenglik */
+    max-width: 800px; /* Maksimal kenglik */
+    padding: 20px;
+    margin-top: 20px;
+    animation: slideIn 1s ease-out; /* Animatsiya: Ko'rsatish */
+}
+
+h2, h3 {
+    color: #f1c40f;
+    animation: fadeIn 3s ease-in-out; /* Animatsiya: Oqish */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+    animation: fadeInUp 2s ease-out; /* Animatsiya: Yuqoriga chiqish */
+}
+
+.grid-container img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.grid-container img:hover {
+    transform: scale(1.1); /* Rasmlarni kichikdan katta qilish */
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.7); /* Orqa fonning shaffofligi */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 80%; /* 80% kenglik */
+    max-width: 800px; /* Maksimal kenglik */
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 0;
+    border-radius: 10px;
+    animation: fadeIn 4s ease-in-out; /* Animatsiya: Oqish */
+}
+
+/* Animatsiyalar */
+@keyframes gradientAnimation {
+    0% { background: linear-gradient(45deg, #ff7e5f, #feb47b); }
+    25% { background: linear-gradient(45deg, #6a11cb, #2575fc); }
+    50% { background: linear-gradient(45deg, #00b09b, #96c93d); }
+    75% { background: linear-gradient(45deg, #ff6a00, #ee0979); }
+    100% { background: linear-gradient(45deg, #ff7e5f, #feb47b); }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(0); }
+}
+
+
+
+
+/*button*/
+.next-button {
+display: inline-block;
+padding: 10px 20px;
+background-color: #007bff; /* Ko'k rang */
+color: white;
+text-decoration: none;
+border-radius: 5px;
+font-size: 16px;
+transition: background-color 0.3s ease;
+}
+
+.next-button:hover {
+background-color: #0056b3; /* Tugma ustida hover holati */
+}
+
+
+/*rasmlar bilan ishlash*/
+
+#dubai{
+    width: 250px;
+    height: 180px;
+}
+#dubai1{
+    float: right;
+}
+#dubai2{
+    width: 250px;
+    height: 250px;
+}
+#dubai_{
+    width: 300px;
+    height: 200px;
+}
+#dubai9{
+    width: 300px;
+    height: 200px;
+}
+ol{
+    text-align: left;
+}
+#dubai11{
+    width: 500px;
+    height: 300px;
+}
